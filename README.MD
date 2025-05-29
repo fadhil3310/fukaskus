@@ -1,6 +1,6 @@
 # Fukaskus Resource System
 
-Pack multiple files and directories into a single binary file, similar to Qt's RCC (supports generating to 32-bit and 64-bit file)
+Pack multiple files and directories into a single binary file, similar to Qt's RCC (supports generating a 32-bit and 64-bit file)
 
 Useful if you want to release your project and don't want your project's required assets file to be stored as-is in the executable folder, where they could easily edited or deleted by user, and also doesn't look aesthetically pleasing.
 
