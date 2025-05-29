@@ -24,7 +24,7 @@ To start writing, use `bundle_writer_32.hpp` for 32-bit or `bundle_writer_64.hpp
 
 You just have to write a 2-line code like this:
 ```
-FukaskusWriter::BundleWriter32 bundleWriter(inputPath, outputPath);
+FukaskusWriter::BundleWriter32 bundleWriter(inputPath, outputPath, bufferSize [optional]);
 bundleWriter.write();
 ```
 
@@ -32,6 +32,10 @@ The `inputPath` is the path of the specification file. To see how the specificat
 
 The `outputPath` is the path of the binary file that will be generated.
 
+The `bufferSize` is the size (in bytes) of the chunk that is used to read and write files to the binary file. Files aren't fully loaded into memory to avoid hogging the RAM. It`s optional to include it in the constructor, and also defaults to 5MB if you don't include it.
+
+
+For all of the public functions inside `BundleWriter` (like setter/getter), see its header file.
 
 ## Read
 
@@ -45,8 +49,10 @@ There are 3 main functions that you can use inside a `BundleReader`:
 - `bool isExist(const std::string &filePath)` check if the file exist.
 - `bool isFile(const std::string &filePath)` check if the provided path is a file.
 
+For all of the public functions inside `BundleReader` (like setter/getter), see its header file.
 
-To start reading a file, you can write a code like this:
+
+To start reading a file, you can write code like this:
 ```
 FukaskusReader::BundleReader32 bundleReader(binaryPath);
 std::optional<std::vector<char>> buffer = bundleReader.readFile(readPath);
@@ -56,4 +62,8 @@ if (!buffer)
 }
 ```
 
-> Note: If you reading a 64-bit file by using a 32-bit reader, or reading a 32-bit file by using a 64-bit reader, Fukaskus will fail to read the file and throws an exception.
+> Note: If you read a 64-bit file by using a 32-bit reader, or read a 32-bit file by using a 64-bit reader, Fukaskus will fail to read the file and throw an exception.
+
+# Building
+
+See `fukaskus` readme.
