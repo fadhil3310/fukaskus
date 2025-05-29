@@ -8,7 +8,7 @@ Useful if you want to release your project and don't want your project's require
 
 # How to Use
 
-This repo contains 3 projects
+This repo contains 3 projects.
 
 - fukaskus
 - libfukaskus-writer
