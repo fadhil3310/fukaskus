@@ -1,6 +1,12 @@
 # Fukaskus Resource System
 
-Pack multiple files and directories into a single binary file, similar to Qt's RCC.
+<img style="margin:auto;display:block;border:4px solid black;" src="docs/banner.png" width="400">
+
+<p></p>
+
+<div align="center" style="font-size:17px;font-weight:500;">Pack multiple files and directories into a single binary file, similar to Qt's RCC.</div>
+
+<p></p>
 
 Useful if you want to release your project and don't want your project's required assets file to be stored as-is in the executable folder, where they could easily edited or deleted by user, and also doesn't look aesthetically pleasing.
 
