@@ -1,6 +1,8 @@
 # Fukaskus Resource System
 
-<img style="margin:auto;display:block;border:4px solid black;" src="docs/banner.png" width="400">
+<p align="center">
+    <img style="margin:auto;display:block;border:4px solid black;" src="docs/banner.png" width="400">
+</p>
 
 <p></p>
 
@@ -53,6 +55,7 @@ Use `-w` option to run in write mode, and after that input the path of the binar
 Fukaskus will tell you if there's something wrong, or not telling anything if everything is running succesfully.
 
 Example:
+
 ```
 fukaskus -w binary.bin -i spec.json
 ```
@@ -64,6 +67,7 @@ Use `-r` option to run in read mode, and after that input the path of the file i
 By default, Fukaskus will output the bytes read from the file to stdout. If you want to output it to disk, use `-o` and then input the path that you want the file to be written to.
 
 Example:
+
 ```
 fukaskus -r assets/image.jpeg -i binary.bin -o image.jpeg
 ```
@@ -156,7 +160,6 @@ For `libfukaskus`, you can include the CMake project to your project whether by 
 - `fukaskus`: cxxopts
 - `libfukaskus-writer`: nlohmann_json
 - `libfukaskus-reader`: No dependencies required
-
 
 # How it Works
 
