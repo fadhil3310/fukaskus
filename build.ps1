@@ -1,6 +1,5 @@
 $ErrorActionPreference = "Stop"
 
 Push-Location $PSScriptRoot
-Set-Location .\build
-cmake --build .
+cmake --build build
 Pop-Location
