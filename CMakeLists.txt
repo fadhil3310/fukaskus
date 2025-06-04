@@ -37,12 +37,12 @@ install(TARGETS ${LibsBuilt}
     INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
 )
 
-if(BUILD_WRITER)
+# if(BUILD_WRITER)
     install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/libs/fukaskus_writer/include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/writer)
-endif()
-if(BUILD_READER)
+# endif()
+# if(BUILD_READER)
     install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/libs/fukaskus_reader/include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/reader)
-endif()
+# endif()
 
 install(EXPORT FukaskusTargets
     FILE FukaskusTargets.cmake
