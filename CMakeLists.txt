@@ -16,12 +16,11 @@ endif()
     
 if(BUILD_WRITER)
     add_subdirectory(libs/fukaskus_writer)
-    add_library(Fukaskus::Writer ALIAS Writer)
     list(APPEND LibsBuilt "Writer")
 endif()
 if(BUILD_READER) 
     add_subdirectory(libs/fukaskus_reader)
-    add_library(Fukaskus::Reader ALIAS Reader)
+    # add_library(Fukaskus::Reader ALIAS Reader)
     list(APPEND LibsBuilt "Reader")
 endif()
 

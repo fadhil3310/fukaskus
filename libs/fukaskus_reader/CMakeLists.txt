@@ -9,6 +9,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_library(Reader
     src/bundle_reader_32.cpp
 )
+add_library(Fukaskus::Reader ALIAS Reader)
 
 # if (NOT TARGET fukaskus-common)
 #     add_subdirectory(../fukaskus_common ${CMAKE_CURRENT_BINARY_DIR}/fukaskus_common_build)

@@ -13,6 +13,7 @@ add_library(Writer
     src/bundle_writer_32.cpp
     # src/bundle_creator.cpp
 )
+add_library(Fukaskus::Writer ALIAS Writer)
 
 # if (NOT TARGET fukaskus-common)
 #     add_subdirectory(../fukaskus_common ${CMAKE_CURRENT_BINARY_DIR}/fukaskus_common_build)
