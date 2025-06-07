@@ -7,7 +7,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 option(BUILD_WRITER "Build Fukaskus::Writer" ON)
 option(BUILD_READER "Build Fukaskus::Reader" ON)
-option(BUILD_CLI "Build FukaskusCLI" ON)
+option(BUILD_CLI "Build FukaskusCLI" OFF)
 
 # Check if BUILD_WRITER/BUILD_READER is turned off while BUILD_CLI is turned on.
 if (BUILD_CLI AND NOT BUILD_WRITER OR NOT BUILD_READER)
