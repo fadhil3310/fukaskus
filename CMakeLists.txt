@@ -37,10 +37,10 @@ install(TARGETS ${LibsBuilt}
 )
 
 # if(BUILD_WRITER)
-    install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/libs/fukaskus_writer/include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/writer)
+    install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/libs/fukaskus_writer/include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 # endif()
 # if(BUILD_READER)
-    install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/libs/fukaskus_reader/include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/reader)
+    install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/libs/fukaskus_reader/include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 # endif()
 
 install(EXPORT FukaskusTargets
