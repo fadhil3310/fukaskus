@@ -1,4 +1,4 @@
-#include "../include/specification_reader.hpp"
+#include "../include/fukaskus_writer/specification_reader.hpp"
 
 #include <iostream>
 #include <fstream>

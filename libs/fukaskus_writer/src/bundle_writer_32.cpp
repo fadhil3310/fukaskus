@@ -1,10 +1,9 @@
-#include "../include/bundle_writer_32.hpp"
+#include "../include/fukaskus_writer/bundle_writer_32.hpp"
 
 #include <filesystem>
 #include <iostream>
 
-#include "../include/specification_reader.hpp"
-#include "bundle_writer_32.hpp"
+#include "../include/fukaskus_writer/specification_reader.hpp"
 
 namespace fs = std::filesystem;
 
