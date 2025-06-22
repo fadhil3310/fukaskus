@@ -1,4 +1,4 @@
-# Fukaskus Resource System
+# Fukaskus 
 
 Pack multiple files and directories into a single binary file, similar to Qt's RCC.
 
